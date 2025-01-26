@@ -8,12 +8,10 @@ controller:
   ingress:
     enabled: enabled
     paths:
-      - pathType: ImplementationSpecific
-        backend:
+      - backend:
           serviceName: ssl-redirect
           servicePort: use-annotation
-      - pathType: ImplementationSpecific
-        backend:
+      - backend:
           serviceName: jenkins
           servicePort: 8080
   containerEnvFrom:
