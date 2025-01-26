@@ -13,7 +13,7 @@ controller:
           servicePort: use-annotation
       - backend:
           serviceName: jenkins
-        servicePort: 8080    
+          servicePort: 8080    
   containerEnvFrom:
     - secretRef:
         name: jenkinsoauth
