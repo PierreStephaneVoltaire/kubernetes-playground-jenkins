@@ -4,3 +4,7 @@ rbac:
 serviceAccount:
   create: false
   name: jenkins-service-account
+controller:
+  containerEnvFrom:
+    - secretRef:
+        name: jenkinsoauth
