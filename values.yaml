@@ -5,6 +5,8 @@ serviceAccount:
   create: false
   name: jenkins-service-account
 controller:
+  ingress:
+    enabled: enabled
   containerEnvFrom:
     - secretRef:
         name: jenkinsoauth
