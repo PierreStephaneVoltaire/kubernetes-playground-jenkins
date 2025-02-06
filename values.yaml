@@ -15,5 +15,19 @@ controller:
       alb.ingress.kubernetes.io/listen-ports : '[{"HTTP": 80}, {"HTTPS":443}]'
       alb.ingress.kubernetes.io/ssl-redirect: '443'  
       alb.ingress.kubernetes.io/success-code: '200'    
-      alb.ingress.kubernetes.io/healthcheck-path: '/login'        
+      alb.ingress.kubernetes.io/healthcheck-path: '/login' 
+  installPlugins:
+    - "kubernetes:4306.vc91e951ea_eb_d"
+    - "workflow-aggregator:600.vb_57cdd26fdd7"
+    - "git:5.7.0"
+    - "configuration-as-code:1932.v75cb_b_f1b_698d"
+    - "git-parameter:0.11.0"
+    - "envinject:2.922.v2274200dd258"
+    - "timestamper:1.28"
+    - "dark-theme:524.vd675b_22b_30cb_"
+    - "metrics:4.2.21-461.v881e35d8fa_b_a_"
+    - "packer:1.5"
+    - "uno-choice:2.8.6"
+    - "ws-cleanup:0.48"
+    - "golang:1.4"
 
